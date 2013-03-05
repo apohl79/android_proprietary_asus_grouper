@@ -56,6 +56,16 @@ LOCAL_MODULE_PATH := $(TARGET_OUT)/lib
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := keystore.grouper
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := keystore.grouper.so
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_PATH := $(TARGET_OUT)/lib/hw
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libwvm   
 LOCAL_MODULE_OWNER := widevine
 LOCAL_SRC_FILES := libwvm.so
